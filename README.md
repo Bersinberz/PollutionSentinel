@@ -126,30 +126,6 @@ Then open `http://localhost:3000` in your browser.
 
 ---
 
-## Pages
-
-### Home (`index.html`)
-Enter your name, phone number, and GPS coordinates (or use auto-detect). The server fetches your local AQI, shows a result dialog, and sends an SMS alert if AQI > 30.
-
-### Dashboard (`dashboard.html`)
-- Overall Chennai AQI + predicted next-hour AQI
-- Zone dropdown with AQI bar indicator
-- Leaflet map with color-coded markers per zone
-- Scrollable alert list for zones with AQI > 50
-
-### Trends (`graph.html`)
-- Stats overview: overall AQI, predicted AQI, zone count, most polluted zone
-- AQI distribution bar chart (top 15 zones)
-- Dominant pollutants doughnut chart
-- Top 10 most polluted zones horizontal bar chart
-- Air quality status breakdown pie chart
-
-### Alerts (`alerts.html`)
-- Active alert cards for all zones with AQI > 50
-- Monthly alert history bar chart (last 12 months)
-
----
-
 ## AQI Color Scale
 
 | AQI Range | Status | Color |
@@ -171,12 +147,6 @@ Enter your name, phone number, and GPS coordinates (or use auto-detect). The ser
 ## AI Chatbot — Mr. Pollution Sentinel
 
 The chatbot is powered by NVIDIA's **Qwen3-Coder-480B** model. On each message, the frontend sends the user's query along with live AQI context (overall AQI, zone data, predictions) to `/api/chat`. The model responds with concise, health-focused advice specific to Chennai's current air quality.
-
----
-
-## License
-
-MIT License — feel free to use, modify, and distribute.
 
 ---
 
